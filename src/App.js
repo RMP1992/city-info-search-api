@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import React from 'react';
+import City from './Component/City'
+import {
+  HashRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from 'react-router-dom';
+import Search from './Component/Search';
+import NavBar from './Component/NavBar/NavBar';
 import './App.css';
 
-function App() {
+let App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar></NavBar>
+      <main>
+        <Switch>
+          <Route path = '/'exact>
+              <div className = "App">
+                <City> </City>  
+              </div> 
+            </Route> 
+            <Route path = '/search'exact >
+              <Search> </Search> 
+            </Route> 
+            <Redirect to = '/' />
+        </Switch>
+      </main>
+    
+      
+    </Router>
   );
 }
 

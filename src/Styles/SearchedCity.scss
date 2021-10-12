@@ -1,0 +1,23 @@
+@import '../Styles/Variables/variables.scss';
+
+.city-info-container {
+    display: flex;
+    justify-content: center;
+}
+.city-info-wrapper {
+    @include dataLayout();
+}
+@media (max-width: 1030px) {
+    .city-info-wrapper span {
+        font-size: 2.5em;
+        line-height: 2em;
+    }
+    .city-info-wrapper {
+        border: 5px solid purple;
+    }
+}
+@media (max-width: 450px) {
+    .city-info-wrapper span {
+        font-size: 1.5em;
+    }
+}

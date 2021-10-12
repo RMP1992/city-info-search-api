@@ -1,0 +1,75 @@
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.city-data-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.data-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 2rem;
+  border: 3px solid purple;
+  border-radius: 25px;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.btn {
+  font-size: 1.5em;
+  background-color: darkblue;
+  color: white;
+  font-weight: 700;
+  padding: .5rem;
+  border-radius: 25px;
+  border: 1px solid transparent;
+}
+
+.click {
+  padding: 2rem;
+  font-size: 1.5em;
+}
+
+@media (max-width: 1030px) {
+  .click {
+    font-size: 2.5em;
+  }
+  .data-container span {
+    font-size: 3em;
+    line-height: 2em;
+  }
+  .data-container {
+    border: 5px solid purple;
+  }
+}
+
+@media (max-width: 320px) {
+  .click {
+    font-size: 1.5em;
+  }
+}
+/*# sourceMappingURL=City.css.map */

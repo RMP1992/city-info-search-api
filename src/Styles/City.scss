@@ -1,0 +1,36 @@
+@import '../Styles/Variables/variables.scss';
+.App {
+    @include cardStyles();
+}
+.city-data-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data-container {
+    @include dataLayout();
+}
+.btn{
+    @include buttonStyle();
+}
+.click {
+    padding: 2rem;
+    font-size: 1.5em;
+}
+@media (max-width: 1030px) {
+    .click {
+        font-size: 2.5em;
+    }
+    .data-container span {
+        font-size: 3em;
+        line-height: 2em;
+    }
+    .data-container {
+        border: 5px solid purple;
+    }
+}
+@media (max-width: 320px) {
+    .click {
+        font-size: 1.5em;
+    }
+}

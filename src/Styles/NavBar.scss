@@ -1,0 +1,29 @@
+#root nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-color: darkblue;
+}
+#root nav a {
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 1030px) {
+    #root nav a {
+        font-size: 3em;
+    }
+}
+@media (max-width: 450px) {
+    #root nav a {
+        font-size: 1em;
+    }
+    .data-container span {
+        font-size: 2em;
+    }
+    .btn {
+        font-size: 2em;
+        padding: .3em;
+
+    }
+}

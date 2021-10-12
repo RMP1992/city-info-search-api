@@ -1,0 +1,63 @@
+@import '../Styles/Variables/variables.scss';
+@import '../Styles/Breakpoints/Breakpoints.scss';
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    align-items: center;
+}
+.input-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.input-label input {
+    margin: 1rem;
+    width: 15rem;
+    border: 3px solid darkblue;
+    border-radius: 15px;
+}
+.btn-wrapper {
+    padding: 1rem;
+}
+@media (max-width: 600px) {
+    .input-label input {
+        width: 11rem;
+    }
+    
+}
+@media (max-width: 1030px) {
+    .input-label input {
+        width: 23rem;
+        height: 3rem;
+        font-size: 2rem;
+    }
+    .btn {
+        font-size: 3em;
+        padding: 1rem;
+    }
+    span.search-prompt {
+        font-size: 2em;
+    }
+    
+}
+@media (max-width: 450px) {
+    .input-label {
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-label input {
+        width: 20rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 320px) {
+    .input-label input {
+        width: 15rem;
+    }
+    .btn {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,26 @@
+
+@mixin cardStyles() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+@mixin dataLayout {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    border: 3px solid purple;
+    border-radius: 25px;
+    padding: 1rem;
+    margin: 2rem;
+}
+@mixin buttonStyle {
+    font-size: 1.5em;
+    background-color: darkblue;
+    color: white;
+    font-weight: 700;
+    padding: .5rem;
+    border-radius: 25px;
+    border: 1px solid transparent;
+
+}
